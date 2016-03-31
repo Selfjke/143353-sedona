@@ -1,0 +1,23 @@
+body {
+	font-size: 14px;
+	color:#333333;
+	line-height: 21px;
+	font-family: Sans;
+}
+.nav,
+.index-content-search {
+	font-size:14px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size:21px;
+	font-weight: bold;
+}
+h2{
+	font-size:30px;
+	font-weight: bold;
+}
+.causes-item-text {
+	color:white;
+}

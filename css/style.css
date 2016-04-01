@@ -3,6 +3,7 @@ body {
 	color:#333333;
 	line-height: 21px;
 	font-family: Sans;
+	text-transform: uppercase;
 }
 .nav,
 .index-content-search {

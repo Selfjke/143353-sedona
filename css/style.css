@@ -19,6 +19,82 @@ h2{
 	font-size:30px;
 	font-weight: bold;
 }
-.causes-item-text {
+.causes-item-text{
 	color:white;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+.clearfix::after {
+	content: "";
+	display:table;
+	clear: both;
+}
+.nav{
+	height: 70px;
+	width: 100%;
+}
+.index-logo {
+	width: 100%;
+	height: 510px;
+	margin-left: auto;
+	margin-left: auto;
+	margin-bottom: 60px;
+}
+
+.causes-item-big {
+	width: 100%;
+}
+.causes-item-text {
+float:left;
+width: 30%;
+background-color:#81b3d2;
+height: 255px;
+}
+.causes-item-image {
+	height: 255px;
+	width: 70%;
+	float:left;
+}
+
+.causes-item-small:last-child {
+	margin-bottom: 55px;
+}
+
+.causes-item {
+	width:33%;
+	height: 330px;
+	float:left;
+}
+.causes-item:last-child{
+	width: 34%;
+	float: right;
+}
+.index-content-search {
+	width:575px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 2px solid black;
+	height: 485px;
+}
+.main-footer {
+	margin-top: 80px;
+}
+.footer-heshtag {
+	float: left;
+	width: 33%;
+	padding-left: 73px;
+	box-sizing:border-box;
+
+}
+.footer-social {
+	float:left;
+	width:33%;
+}
+.footer-copyright {
+	float: right;
+	width: 34%;
+	text-align: center;
 }

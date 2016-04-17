@@ -91,8 +91,6 @@ h2{
 .footer-heshtag,
 .footer-social,
 .footer-copyright {
-	border: 2px solid red;
-	box-sizing:border-box;
 	float:left;
 	width: 33%;
 	height: 120px;
@@ -101,4 +99,63 @@ h2{
 }
 .footer-copyright {
 	width: 34%;
+}
+
+/*стиль второй страница */
+
+.filter {
+	height: 220px;
+	width: 100%;
+	background-image: url(../img/background.jpg);
+}
+.sorting {
+	height: 85px;
+	width: 100%;
+}
+.hotel {
+	height: 450px;
+	width: 100%;
+}
+.hotel-all {
+	width: 100%;
+	float: left;
+	height: 150px;
+	border: 1px solid #e5e5e5;
+	box-sizing:border-box;
+}
+.hotel-all img {
+	float:left;
+}
+.hotel-amara-left {
+	float: left;
+	width: 530px;
+	height: 150px;
+}
+.hotel-amara-right {
+	float: right;
+	width: 330px;
+	margin-right: 75px;
+	height: 150px;
+}
+.hotel-desert-left {
+	float: left;
+	width: 530px;
+	height: 150px;
+}
+.hotel-desert-right {
+	float: right;
+	width: 330px;
+	margin-right: 75px;
+	height: 150px;
+}
+.hotel-villas-left {
+	float: left;
+	width: 530px;
+	height: 150px;
+}
+.hotel-villas-right {
+	float: right;
+	width: 330px;
+	margin-right: 75px;
+	height: 150px;
 }

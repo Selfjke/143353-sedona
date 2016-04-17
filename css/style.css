@@ -45,6 +45,9 @@ h2{
 	width: 100%;
 	height: 510px;
 	margin-bottom: 55px;
+	background: url(../img/introtext.png)50% 50% no-repeat,
+	url(../img/introwhite.png) 0 100% no-repeat,
+  url(../img/backgroundintro.jpg) 0 0 no-repeat;
 }
 .causes {
 	width: 100%;

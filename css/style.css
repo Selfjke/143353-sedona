@@ -1,10 +1,10 @@
+*{box-sizing:border-box}
 body {
 	font-size: 14px;
 	color:#333333;
 	line-height: 21px;
-	font-family: "PT Sans";
+	font-family: "PT Sans", sans-serif;
 	text-transform: uppercase;
-	max-width: 1200px;
 }
 .nav,
 .index-content-search {
@@ -19,6 +19,7 @@ h3 {
 h2{
 	font-size:30px;
 	font-weight: bold;
+    text-align: 24px;
 }
 .causes-item-text{
 	color:white;
@@ -26,6 +27,8 @@ h2{
 .container {
 	width: 100%;
 	margin:0 auto;
+	max-width: 1200px;
+	min-width: 768px;
 }
 .clearfix::after {
 	content: "";
@@ -33,13 +36,34 @@ h2{
 	clear: both;
 	border:2px solid yellow;
 }
-
-.main-header {
-	width: 100%;
+.nav a {
+    text-decoration: none;
+    display: block;
+    padding:14px 73px;
+    color:black;
 }
-.nav {
-	width: 100%;
-	height: 70px;
+.nav ul {
+    padding:0;
+    margin: 0;
+    list-style:none;
+    font-size: 0;
+}
+.nav li {
+    display: inline-block;
+    vertical-align: top;
+    font-size:14px;
+    width: 20%;
+    line-height:26px;
+}
+ul .nav-width{
+    width: 40%;
+}
+.main-header img {
+    position:absolute;
+    top:0;
+    left:50%;
+    display: block;
+    margin-left:-70px;
 }
 .index-logo {
 	width: 100%;
@@ -49,18 +73,38 @@ h2{
 	url(../img/introwhite.png) 0 100% no-repeat,
   url(../img/backgroundintro.jpg) 0 0 no-repeat;
 }
-.causes {
-	width: 100%;
+.causes h1 {
+    line-height: 26px;
+    text-align: center;
+    padding: 0px 300px;
+    padding-bottom: 25px;
+    font-size: 21px;
 }
-.causes-item-big {
-	width: 100%;
+.causes-text {
+    line-height: 26px;
+    font-size: 14px;
+    padding-bottom:50px;
+    text-align: center;
+    display: block;
 }
-
 .causes-item-text {
 	float:left;
 	width: 33%;
 	height: 255px;
 	background-color: #81b3d2;
+    text-align: center;
+}
+.causes-item-text h3 {
+    padding: 0 120px;
+    margin-top: 50px;
+    line-height: 21px;
+    font-size: 21px;
+}
+.causes-item-text p {
+    padding: 0 60px;
+}
+.causes-item-text:nth-child(2) p {
+    padding: 0 90px;
 }
 .causes-item-image img {
 	width: 67%;
@@ -71,39 +115,241 @@ h2{
 	width: 33%;
 	float: left;
 	height: 240px;
-	margin-bottom: 80px;
+	margin-bottom: 74px;
+    text-align: center;
+    line-height: 21px;
+}
+.causes-item h3 {
+    padding:0 160px;
+    margin-top:155px; 
+    position: relative;
+}
+.causes-home p,
+.causes-burger p,
+.causes-souvenirs p{
+    padding: 0 50px;
+}
+
+.causes-home h3::after {
+    content: " ";
+    display: block;
+    background:url(../img/homeicon.png) no-repeat;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top:-105px;
+    left:50%;
+    margin-left: -37px;
+}
+.causes-burger h3::after {
+    content: " ";
+    display: block;
+    background:url(../img/eaticon.png) no-repeat;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top:-105px;
+    left:50%;
+    margin-left: -39px;
+}
+.causes-souvenirs h3::after {
+    content: " ";
+    display: block;
+    background:url(../img/prizeicon.png) no-repeat;
+    position: absolute;
+    width: 64px;
+    height: 76px;
+    position: absolute;
+    top:-105px;
+    left:50%;
+    margin-left: -24px;
+}
+.causes-item-bottom {
+    background-color:#eeeeee;
+    width: 33%;
+	float: left;
+	height: 240px;
+    text-align: center;
+    line-height: 21px;
+    height: 256px;
+}
+.causes-item-bottom h3{
+    padding: 0 140px;
+    margin-top: 50px;
+}
+.causes-item-bottom p{
+    padding: 0 68px;
 }
 .causes-souvenirs,
 .causes-drive{
 	width: 34%;
 }
-
+.index-content  {
+    text-align: center;
+    margin-top: 48px;
+}
+.content-search-open {
+    height: 86px;
+    display: block;
+    background:#766357;
+    color:white;
+    width: 100%;
+    font-size: 21px;
+    line-height: 26px;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: top;
+    border: 0px;
+}
+.index-content label {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    display: inline-block;
+    float: left;
+    padding-left: 60px;
+}
+.date {
+    background-color: #f2f2f2;
+    outline: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    text-transform: inherit;
+    width: 317px;
+    height: 37px;
+    margin-bottom: 30px;
+    padding-left
+}
+.date-open {
+    margin-top: 55px;
+    margin-left: 20px;
+}
+.date-exit {
+    margin-left: 17px;
+}
+.adults input,
+.children input{
+    background-color: #f2f2f2;
+    outline: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    text-transform: inherit;
+    width: 35px;
+    height: 37px;
+    margin-bottom: 60px;
+    text-align: center;
+    vertical-align: top;
+    padding: 0;
+    
+}
+.btn {
+    background-color: #f2f2f2;
+    outline: none;
+    border: none;
+    font: 21px;
+    font-style: bold;
+    color: #a9a9a9;
+    line-height: 26px;
+    width: 35px;
+    height: 37px;
+    margin: 0 -4px;
+    
+}
+.adults .icon-minus {
+    margin-left:33px;
+}
+.children .icon-minus {
+    margin-left: 13px;
+}
+.btn-search {
+    width: 90%;
+    background: #81b3d2;
+    color:white;
+    border: 0px;
+    height: 58px;
+    text-align: center;
+    vertical-align: top;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
 .index-content-search {
-	border:2px solid black;
-	box-sizing:border-box;
 	margin-right: auto;
 	margin-left: auto;
 	width: 570px;
-	height: 480px;
 	margin-top: 50px;
-	margin-bottom: 80px;
 }
-.main-footer {
-	width: 100%;
+.appointment-form {
+    display: none;
+}
+.content-search-open .sub-menu {
+    content:"";
+    display: inline-block;
+}
+.social-btn {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: #81b3d2;
+}
+.footer-maps {
+    background: url(../img/map.jpg)no-repeat;
+    height: 590px;
+    width: 100%;
 }
 .footer-heshtag,
 .footer-social,
 .footer-copyright {
+    position: relative;
 	float:left;
 	width: 33%;
 	height: 120px;
 	text-align: center;
 	padding-top: 41px;
+    bottom: -470px;
+    background-color: white;
+    opacity: 0.9;
+}
+.social-btn {
+    display: inline-block;
+    background-color:#81b3d2;
+    width: 46px;
+    height: 46px;
+    position: relative;
+    font-size: 0;
+    color: white;
+    opacity: 0.9;
+    top:-10px;
+    padding-top: 10px;
+}
+.social-btn span {
+    font-size: 21px;
+    line-height: 20px;
 }
 .footer-copyright {
 	width: 34%;
 }
-
+.footer-heshtag{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+.footer-copyright a {
+    font-size: 14px;
+    color:black;
+    text-decoration: none;
+    background: white;
+    margin-bottom:50px;
+}
+.footer-copyright a img {
+    position: absolute;
+    right:40px;
+    top:35px;
+}
 /*стиль второй страница */
 
 .filter {

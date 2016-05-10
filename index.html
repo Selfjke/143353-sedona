@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/symbols-sedona.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body>
   	<header class="main-header">
@@ -24,7 +27,7 @@
   					</li>
   				</ul>
         	</nav>
-          <a href="#"><img src="img/log.png" alt="Логотип"></a>
+          <a href="#"><img src="img/logo.png" alt="Логотип"></a>
   		</div>
   	</header>
   	<main class="container">
@@ -46,7 +49,7 @@
         <div class="causes-item-small clearfix">
   			  <div class="causes-item causes-home">
   				  <h3>Жилье</h3>
-  				  <p>Рекомендуем пожить в настоящем мотел, все как в кино!</p>
+  				  <p>Рекомендуем пожить в настоящем мотелe, все как в кино!</p>
   			  </div>
   			  <div class="causes-item causes-burger">
   				  <h3>Еда</h3>
@@ -54,7 +57,7 @@
   			  </div>
   			  <div class="causes-item causes-souvenirs">
   				  <h3>Сувениры</h3>
-  				  <p>Не только китайского, но и местного производства!</p>
+  				  <p>Не только китайского, <br>но и местного производства!</p>
   			  </div>
         </div>
 
@@ -63,23 +66,23 @@
   				<img src="img/diabloimg.jpg" alt="причина2">
           </div>
           <div class="causes-item-text">
-  				  <h3>Там есть мост дьявола!</h3>
+              <h3>Там есть <br> мост дьявола!</h3>
   				  <p>- &#8470;2 - </p>
   				  <p>Да, по нему можно пройти!Если конечно вы осмелитесь</p>
           </div>
   			</div>
         <div class="causes-item-small clearfix">
-          <div class="causes-item">
+          <div class="causes-item-bottom">
   				  <h3>Небольшая площадь</h3>
   				  <p>- &#8470;3 - </p>
   				  <p>Все достопримечательности находятся очень близко</p>
   			  </div>
-  			  <div class="causes-item causes-drive">
+  			  <div class="causes-item-bottom causes-drive">
   				  <h3>Красивая дорога</h3>
   				  <p>- &#8470;4 - </p>
   				  <p>Ехать в седону из лас вегаса совсем не скучно!</p>
   			  </div>
-  			  <div class="causes-item">
+  			  <div class="causes-item-bottom">
   				  <h3>Мало туристов</h3>
   				  <p>- &#8470;5 - </p>
   				  <p>Большинство едет в гранд каньон и толпится там</p>
@@ -88,22 +91,22 @@
   		</section>
   		<div class="index-content">
   			<h2>Заинтересовались?</h2>
-  			<p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+  			<p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
   			<div class="index-content-search">
           <button type="button" class="content-search-open">Поиск гостиниц в седоне</button>
 				    <form class="appointment-form" action="echo" method="post">
-              <label>Дата заезда:<input type="text" name="date-arivall" value="24 апреля 2016 "></label>
-					    <label>Дата выезда:<input type="text" name="date-departure" value="4 июля 2016 "></label>
+              <label>Дата заезда:<input class="date date-open" type="text" name="date-arivall" value="24 апреля 2016 "></label>
+					    <label>Дата выезда:<input class="date date-exit" type="text" name="date-departure" value="4 июля 2016 "></label>
               <div class="half-width">
-              <label for="adults">Взрослые:
-						    <button class="btn" type="submit">-</button>
+              <label for="adults" class="adults">Взрослые:
+						    <button class="btn icon-minus" type="submit"></button>
 						    <input id="adults" type="text" name="kol" value="2">
-						    <button class="btn" type="submit">+</button>
+						    <button class="btn icon-plus" type="submit"></button>
 					    </label>
-					    <label for="children">Дети:
-						    <button class="btn" type="submit">-</button>
+					    <label for="children" class="children">Дети:
+						    <button class="btn icon-minus" type="submit"></button>
 						    <input id="children" type="text" name="kol" value="0">
-						    <button class="btn" type="submit">+</button>
+						    <button class="btn icon-plus" type="submit"></button>
 					    </label>
               </div>
 					    <button class="btn-search" type="submit">Найти</button>
@@ -118,12 +121,12 @@
   				#Visitsedona
         	</section>
         	<section class="footer-social">
-        		  <a class="social-btn social-btn-twitter" href="#"><img src="#" alt="twitter"></a>
-          		<a class="social-btn social-btn-fb" href="#"><img src="#" alt="facebook"></a>
-          		<a class="social-btn social-btn-youtube" href="#"><img src="#" alt="youtube"></a>
+        		  <a class="social-btn" href="#"><span class="icon-twitter"></span></a>
+          		<a class="social-btn" href="#"><span class="icon-facebook"></span></a>
+          		<a class="social-btn" href="#"><span class="icon-youtube"></span></a>
         	</section>
 			    <section class="footer-copyright">
-          		<a class="btn" href="https://htmlacademy.ru">Website by<img src="#" alt="HTML ACADEMY"></a>
+          		<a class="btn" href="https://htmlacademy.ru">Website by<img src="img/logoacademy.png" alt="HTML ACADEMY"></a>
         	</section>
         </div>
   		</div>

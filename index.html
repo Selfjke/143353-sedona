@@ -13,8 +13,8 @@
   		<div class="container">
   			<nav class="nav">
   				<ul>
-  					<li>
-  						<a href="#">Информация</a>
+  					<li  class="active">
+  						<a href="index.html">Информация</a>
   					</li>
   					<li class="nav-width">
   						<a href="#">Фото и Видео</a>
@@ -23,7 +23,7 @@
   						<a href="#">Карта штата</a>
   					</li>
   					<li>
-  						<a href="#">Гостиницы</a>
+  						<a href="inner.html">Гостиницы</a>
   					</li>
   				</ul>
         	</nav>
@@ -95,18 +95,24 @@
   			<div class="index-content-search">
           <button type="button" class="content-search-open">Поиск гостиниц в седоне</button>
 				    <form class="appointment-form" action="echo" method="post">
-              <label>Дата заезда:<input class="date date-open" type="text" name="date-arivall" value="24 апреля 2016 "></label>
-					    <label>Дата выезда:<input class="date date-exit" type="text" name="date-departure" value="4 июля 2016 "></label>
+                        <label>Дата заезда:
+                        	<input class="date date-open" type="text" name="date-arivall" value="24 апреля 2016 ">
+                        	<button type="button" class="btn icon-calendar"></button>
+                        </label>
+					    <label>Дата выезда:
+            				<input class="date date-exit" type="text" name="date-departure" value="4 июля 2016 ">
+             				<button type="button" class="btn icon-calendar"></button>
+             			</label>
               <div class="half-width">
               <label for="adults" class="adults">Взрослые:
-						    <button class="btn icon-minus" type="submit"></button>
+						    <button type="button" class="btn icon-minus" type="submit"></button>
 						    <input id="adults" type="text" name="kol" value="2">
-						    <button class="btn icon-plus" type="submit"></button>
+						    <button type="button" class="btn icon-plus" type="submit"></button>
 					    </label>
 					    <label for="children" class="children">Дети:
-						    <button class="btn icon-minus" type="submit"></button>
+						    <button  class="btn icon-minus" type="button"></button>
 						    <input id="children" type="text" name="kol" value="0">
-						    <button class="btn icon-plus" type="submit"></button>
+						    <button class="btn icon-plus" type="button"></button>
 					    </label>
               </div>
 					    <button class="btn-search" type="submit">Найти</button>

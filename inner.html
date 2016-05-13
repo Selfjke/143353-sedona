@@ -14,7 +14,7 @@
   			<nav class="nav">
   				<ul>
   					<li>
-  						<a href="#">Информация</a>
+  						<a href="index.html">Информация</a>
   					</li>
   					<li class="nav-width">
   						<a href="#">Фото и Видео</a>
@@ -22,8 +22,8 @@
   					<li>
   						<a href="#">Карта штата</a>
   					</li>
-  					<li>
-  						<a href="#">Гостиницы</a>
+  					<li  class="active">
+  						<a href="inner.html">Гостиницы</a>
   					</li>
   				</ul>
         	</nav>
@@ -31,31 +31,25 @@
   		</div>
   	</header>
   	<main class="container">
-      <div class="filter">
-        <form class="filter-form" action="echo" method="post">
+      <div class="filter clearfix">
+        <form class="filter-form" action="#" method="post">
           <div class="filter-form-infastructure">
             <h3>Инфраструктура:</h3>
-            <label>
-            <input type="checkbox" name="pool" value="pool" checked>Бассейн
-            </label>
-            <label>
-            <input type="checkbox" name="parking" value="parking">Парковка
-            </label>
-            <label>
-            <input type="checkbox" name="wi-fi" value="wi-fi">wi-fi
-            </label>
+            <input id="pool" type="checkbox" name="pool" value="pool">
+            <label for="pool">Бассейн</label>
+            <input id="parking" type="checkbox" name="parking" value="parking">
+            <label for="parking">Парковка</label>
+            <input id="wi-fi" type="checkbox" name="wi-fi" value="wi-fi">
+			<label for="wi-fi">wi-fi</label>
           </div>
           <div class="filter-form-typehome">
             <h3>Тип жилья:</h3>
-            <label>
-            <input type="checkbox" name="hotel" value="hotel" checked>Гостиница
-            </label>
-            <label>
-            <input type="checkbox" name="motel" value="motel" checked>Мотель
-            </label>
-            <label>
-            <input type="checkbox" name="appartament" value="appartament" checked>Апартаменты
-            </label>
+            <input id="hotel" type="checkbox" name="hotel" value="hotel">
+			<label for="hotel">Гостиница</label>
+            <input id="motel" type="checkbox" name="motel" value="motel">
+            <label for="motel">Мотель</label>
+            <input id="appartament" type="checkbox" name="appartament" value="appartament">
+            <label for="appartament">Апартаменты</label>
           </div>
           <div class="filter-form-range">
             <h3>Стоимость в сутки (Р):</h3>
@@ -63,8 +57,10 @@
               <input type="text" name="summa" value="ОТ 0">
               <input type="text" name="summa" value="до 3000">
             </div>
-            <input type="range">
-            <a href="#"><button class="btn">Показать</button></a>
+            <input type="range" min="0" max="3000" >
+            <a href="#">
+            <button class="btn">Показать</button>
+            </a>
           </div>
         </form>
       </div>
@@ -72,8 +68,8 @@
         <h2>Найдено:3</h2>
         <b>Сортировка</b>
         <ul>
-          <li>
-            <a href="#" class="sorting-active">По цене</a>
+          <li class="active">
+            <a href="#">По цене</a>
           </li>
           <li>
             <a href="#">По типу</a>
@@ -82,14 +78,18 @@
             <a href="#">По рейтингу</a>
           </li>
         </ul>
+        <span class="arrows active icon-down-dir"><a href="#"></a>
+        </span>
+        <span class="arrows icon-up-dir"><a href="#"></a>
+        </span>
       </div>
       <div class="hotel">
         <div class="hotel-all">
-        <img src="http://placehold.it/150x150" alt="amara">
+        <img src="img/amarahotel.jpg" alt="amara">
           <div class="hotel-amara-left">
             <h3>Amara resort &amp; spa</h3>
             <div class="hotel-type">
-              <p>Мотель</p>
+              <p>Гостиница</p>
               <a href="#" class="btn btn-about">Подробнее</a>
             </div>
             <div class="hotel-price">
@@ -98,12 +98,15 @@
             </div>
           </div>
           <div class="hotel-amara-right">
-            <img src="" alt="Звезды">
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
             <span class="hotel-rating">Рейтинг: 8,5</span>
           </div>
         </div>
         <div class="hotel-all">
-        <img src="http://placehold.it/150x150" alt="desert">
+        <img src="img/deserthotel.jpg" alt="desert">
           <div class="hotel-desert-left">
             <h3>Desert Quail Inn</h3>
             <div class="hotel-type">
@@ -116,12 +119,13 @@
             </div>
           </div>
            <div class="hotel-desert-right">
-            <img src="" alt="Звезды">
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
             <span class="hotel-rating">Рейтинг: 8,9</span>
           </div>
         </div>
         <div class="hotel-all">
-        <img src="http://placehold.it/150x150" alt="villas">
+        <img src="img/hoteldiablo.jpg" alt="villas">
           <div class="hotel-villas-left">
             <h3>Villas at poco diablo</h3>
             <div class="hotel-type">
@@ -134,25 +138,27 @@
             </div>
           </div>
           <div class="hotel-villas-right">
-            <img src="" alt="Звезды">
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
+            <span class="icon-star"></span>
             <span class="hotel-rating">Рейтинг: 9,2</span>
           </div>
         </div>
       </div>
 
   	</main>
-  	<footer class="main-footer">
+  	<footer class="main-footer-hotels">
   		<div class="container">
   			  <section class="footer-heshtag">
   				#Visitsedona
         	</section>
         	<section class="footer-social">
-        		  <a class="social-btn social-btn-twitter" href="#"><img src="#" alt="twitter"></a>
-          		<a class="social-btn social-btn-fb" href="#"><img src="#" alt="facebook"></a>
-          		<a class="social-btn social-btn-youtube" href="#"><img src="#" alt="youtube"></a>
+        		  <a class="social-btn" href="#"><span class="icon-twitter"></span></a>
+          		<a class="social-btn" href="#"><span class="icon-facebook"></span></a>
+          		<a class="social-btn" href="#"><span class="icon-youtube"></span></a>
         	</section>
 			    <section class="footer-copyright">
-          		<a class="btn" href="https://htmlacademy.ru">Website by<img src="#" alt="HTML ACADEMY"></a>
+          		<a class="btn" href="https://htmlacademy.ru">Website by<img src="img/logoacademy.png" alt="HTML ACADEMY"></a>
         	</section>
         </div>
   	</footer>

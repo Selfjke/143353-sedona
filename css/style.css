@@ -139,7 +139,7 @@ ul .nav-width{
 }
 .causes-item h3 {
     padding:0 160px;
-    margin-top:155px; 
+    margin-top:155px;
     position: relative;
 }
 .causes-home p,
@@ -261,7 +261,7 @@ ul .nav-width{
     text-align: center;
     vertical-align: top;
     padding: 0;
-    
+
 }
 .appointment-form input:hover {
 	background-color:#ebebeb;
@@ -297,7 +297,7 @@ ul .nav-width{
     height: 37px;
     margin: 0 -4px;
 	vertical-align: center;
-    
+
 }
 .adults .icon-minus {
     margin-left:33px;
@@ -721,4 +721,8 @@ input[type="checkbox"]:checked+label:active::before {
     bottom:0px;
     background-color: white;
     opacity: 0.9;
+}
+.main-footer-hotels .footer-copyright {
+float: right;
+width: 34%;
 }

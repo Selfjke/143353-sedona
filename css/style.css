@@ -23,7 +23,6 @@ h3 {
 h2{
 	font-size:30px;
 	font-weight: bold;
-    text-align: 24px;
 }
 .causes-item-text{
 	color:white;
@@ -139,7 +138,7 @@ ul .nav-width{
 }
 .causes-item h3 {
     padding:0 160px;
-    margin-top:155px; 
+    margin-top:155px;
     position: relative;
 }
 .causes-home p,
@@ -261,7 +260,7 @@ ul .nav-width{
     text-align: center;
     vertical-align: top;
     padding: 0;
-    
+
 }
 .appointment-form input:hover {
 	background-color:#ebebeb;
@@ -297,7 +296,7 @@ ul .nav-width{
     height: 37px;
     margin: 0 -4px;
 	vertical-align: center;
-    
+
 }
 .adults .icon-minus {
     margin-left:33px;
@@ -414,11 +413,9 @@ ul .nav-width{
 	font-size:14px;
 	color: white;
 	line-height: 21px;
-	width: 100%;
 	padding: 0;
 	margin: 0;
 	min-height: 217px;
-	width: 100%;
 	background: url(../img/background.jpg)no-repeat;
 }
 .filter h3 {
@@ -480,15 +477,117 @@ input[type="checkbox"]:checked+label:active::before {
 	float: left;
 	padding-left: 30px;
 }
-.filter-form-range {
-	min-height: 217px;
-	display: inline-block;
-	width: 50%;
-	float: right;
-	display: inline-block;
-	padding-left: 200px;
+.filter-range {
+	padding-left: 150px;
+	float: left;
 }
-.sorting {
+.price-controls {
+	height: 36px;
+	margin-bottom: 20px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	width: 330px;
+	font-size: 0;
+	position: relative;
+}
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: top;
+  cursor: pointer;
+	padding-top: 5px;
+}
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 161px;
+  padding-left: 55px;
+}
+.price-controls input {
+  width: 70px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border:none;
+  outline: none;
+}
+.price-controls::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  top:50%;
+	left: 50%;
+  background: #ffffff;
+	transform: translate(-50%, -50%);
+}
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+.range-controls .scale {
+  height: 2px;
+	width: 330px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+.range-toggle {
+	position: absolute;
+	top: -7px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+.range-toggle::after{
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border-radius: 50%;
+	right: -2px;
+	bottom: -2px;
+}
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+.range-toggle:hover::after {
+  background: #1c4f80;
+}
+.btn-transparent {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
+
+	font-size: 14px;
+	line-height: 20px;
+	color:#ffffff;
+	text-transform: uppercase;
+	background: transparent;
+	border:2px solid #ffffff;
+	border-radius: 2px;
+	outline: none;
+	cursor: pointer;
+}
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+	.sorting {
 	height: 85px;
 	width: 100%;
 	border-bottom: 1px solid #e5e5e5;
@@ -721,4 +820,7 @@ input[type="checkbox"]:checked+label:active::before {
     bottom:0px;
     background-color: white;
     opacity: 0.9;
+}
+.main-footer-hotels .footer-copyright {
+	width: 34%;
 }

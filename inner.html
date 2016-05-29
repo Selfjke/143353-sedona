@@ -51,18 +51,22 @@
             <input id="appartament" type="checkbox" name="appartament" value="appartament">
             <label for="appartament">Апартаменты</label>
           </div>
-          <div class="filter-form-range">
-            <h3>Стоимость в сутки (Р):</h3>
-            <div class="filter-form-border">
-              <input type="text" name="summa" value="ОТ 0">
-              <input type="text" name="summa" value="до 3000">
-            </div>
-            <input type="range" min="0" max="3000" >
-            <a href="#">
-            <button class="btn">Показать</button>
-            </a>
-          </div>
         </form>
+        <div class="filter-range">
+          <h3>Стоимость в сутки (р):</h3>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+        </div>
       </div>
       <div class="sorting container">
         <h2>Найдено:3</h2>
@@ -148,7 +152,7 @@
 
   	</main>
   	<footer class="main-footer-hotels">
-  		<div class="container">
+  		<div class="container clearfix">
   			  <section class="footer-heshtag">
   				#Visitsedona
         	</section>

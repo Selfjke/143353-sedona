@@ -23,7 +23,6 @@ h3 {
 h2{
 	font-size:30px;
 	font-weight: bold;
-    text-align: 24px;
 }
 .causes-item-text{
 	color:white;
@@ -338,6 +337,7 @@ ul .nav-width{
     height: 400px;
     right:50%;
     margin-right: -285px;
+    z-index: 10;
 }
 .icon-calendar {
 	height: 37px;
@@ -348,6 +348,8 @@ ul .nav-width{
     background: url(../img/map.jpg)no-repeat;
     height: 590px;
     width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 .footer-heshtag,
 .footer-social,
@@ -358,9 +360,13 @@ ul .nav-width{
 	height: 120px;
 	text-align: center;
 	padding-top: 41px;
-    bottom: -470px;
-    background-color: white;
-    opacity: 0.9;
+	bottom: -470px;
+	background-color: white;
+	opacity: 0.9;
+}
+.footer-copyright {
+	float: right;
+	width:34%;
 }
 .social-btn {
     display: inline-block;
@@ -384,9 +390,6 @@ ul .nav-width{
 	background-color: #5496bd;
 	color:rgba(255,255,255,0.3);
 }
-.footer-copyright {
-	width: 34%;
-}
 .footer-heshtag{
     font-size: 21px;
     line-height: 26px;
@@ -401,9 +404,9 @@ ul .nav-width{
     margin-bottom:50px;
 }
 .footer-copyright a img {
-    position: absolute;
-    right:40px;
-    top:35px;
+    position: relative;
+    right:-10px;
+    top:0px;
 }
 .footer-copyright a img:hover {
 	opacity: 0.3;

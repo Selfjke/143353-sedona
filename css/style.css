@@ -822,5 +822,11 @@ input[type="checkbox"]:checked+label:active::before {
     opacity: 0.9;
 }
 .main-footer-hotels .footer-copyright {
+<<<<<<< HEAD
 	width: 34%;
 }
+=======
+float: right;
+width: 34%;
+}
+>>>>>>> origin/master
